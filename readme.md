@@ -1,67 +1,121 @@
-🎯 Flow Test Sauce Demo (Ideal)
-1. auth.setup.ts
-Login standard user
-Save session
-2. login.negative.spec.ts
-Locked user
-Wrong password
-Empty field
-3. inventory.spec.ts
-Product list visible
-Sorting works
-4. cart.spec.ts
-Add item
-Remove item
-5. checkout.spec.ts
-Checkout end-to-end
+# SauceDemo Automation Testing with Playwright
 
-Credentials Sauce Demo (Public)
+![Playwright](https://img.shields.io/badge/Playwright-Automation-green?logo=playwright)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
+![CI](https://github.com/rizqihilman/Portfolio-rizqihilman-saucedemo/actions/workflows/playwright.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-https://www.saucedemo.com/
-| User            | Password     |
-| --------------- | ------------ |
-| standard_user   | secret_sauce |
-| locked_out_user | secret_sauce |
-| problem_user    | secret_sauce |
+Automation testing project menggunakan **Playwright + TypeScript** dengan pendekatan **Page Object Model (POM)** dan **CI/CD GitHub Actions**.  
+Project ini dibuat sebagai **portfolio QA Automation Engineer**.
 
-Struktur FINAL (CI/CD Friendly)
-playwright-sauce-demo/
-│
-├── .github/
-│   └── workflows/
-│       └── playwright.yml      # CI pipeline
-│
-├── playwright.config.ts
-├── package.json
-├── tsconfig.json
-│
-├── tests/
-│   ├── setup/
-│   │   └── auth.setup.ts
-│   │
-│   ├── auth/
-│   │   ├── login.spec.ts
-│   │   └── login.negative.spec.ts
-│   │
-│   ├── inventory/
-│   │   └── inventory.spec.ts
-│   │
-│   └── checkout/
-│       └── checkout.spec.ts
-│
-├── pages/
-│   ├── login.page.ts
-│   ├── inventory.page.ts
-│   └── checkout.page.ts
-│
-├── utils/
-│   ├── auth.ts
-│   ├── test-tags.ts
-│   └── test-data.ts
-│
-├── storage/
-│   └── standard-user.json
-│
-├── .env.example
-├── .gitignore
-└── README.md
+## Tech Stack
+- **Playwright**
+- **TypeScript**
+- **Page Object Model (POM)**
+- **GitHub Actions (CI/CD)**
+- **HTML Report**
+
+---
+
+## Test Coverage
+### Authentication
+- Login berhasil (standard_user)
+- Validasi login gagal (locked_out_user, invalid credential)
+
+### Inventory
+- Sorting produk (A–Z, Z–A, Price Low–High)
+- Add product ke cart
+
+### Cart
+- Verifikasi item di cart
+- Lanjut ke checkout
+
+### Checkout (End-to-End)
+- Checkout produk sampai selesai
+- Verifikasi checkout success
+
+## Project Structure
+
+```text
+sauce-demo-playwright/
+├─ .github/
+│  └─ workflows/
+│     └─ playwright.yml  # CI Pipeline
+├─ pages/
+│  ├─ login.page.ts
+│  ├─ inventory.page.ts
+│  ├─ cart.page.ts
+│  └─ checkout.page.ts
+├─ tests/
+│  ├─ login/
+│  ├─ inventory/
+│  └─ checkout/
+├─ playwright.config.ts
+├─ package.json
+└─ README.md
+
+
+▶️ How to Run Locally
+1️⃣ Install dependencies
+- npm install
+
+2️⃣ Install Playwright browsers
+- npx playwright install
+
+3️⃣ Run all tests
+- npx playwright test
+
+4️⃣ Open HTML Report
+- npx playwright show-report
+
+🏷️ Test Tagging
+Project ini menggunakan tagging untuk grouping test:
+
+| Tag           | Deskripsi           |
+| ------------- | ------------------- |
+| `@smoke`      | Critical path       |
+| `@regression` | Full regression     |
+| `@e2e`        | End-to-end scenario |
+| `@checkout`   | Checkout module     |
+
+Contoh menjalankan test tertentu:
+- npx playwright test --grep @e2e
+
+🔄 CI/CD Pipeline
+Automation dijalankan otomatis menggunakan GitHub Actions pada:
+- Push ke branch main
+- Pull Request ke main
+
+CI menjalankan:
+- Install dependencies
+- Install browser
+- Run Playwright tests
+- Generate HTML report (artifact)
+
+📌 Why This Project?
+- Automation best practices
+- Clean & scalable structure
+- CI/CD implementation
+- End-to-End testing
+- Industry-ready QA workflow
+
+## Test Report (Allure)
+Project ini menggunakan **Allure Report** untuk visualisasi hasil automation test.
+
+- npx playwright test
+- allure serve allure-results
+
+Allure Report menampilkan:
+- Test steps
+- Screenshot & video on failure
+- Retry history
+- Tagging (`@smoke`, `@regression`, `@e2e`)
+
+
+Report tersedia sebagai **GitHub Actions artifact** setiap pipeline dijalankan.
+
+
+👨‍💻 Author
+Rizqi Hilman
+QA Automation Engineer
+🔗 GitHub: https://github.com/rizqihilman

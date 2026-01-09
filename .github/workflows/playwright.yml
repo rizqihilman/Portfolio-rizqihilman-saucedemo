@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install --with-deps @smoke
 
       - name: Run Playwright tests
         env:
@@ -34,3 +34,20 @@ jobs:
         with:
           name: playwright-report
           path: reports/html
+      
+      - name: 📊 Install Allure CLI
+        if: always()
+        run: npm install -g allure-commandline
+
+      - name: 🧪 Generate Allure Report
+        if: always()
+        run: |
+          allure generate allure-results --clean -o allure-report
+
+      - name: 📤 Upload Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+          retention-days: 7
