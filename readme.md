@@ -15,8 +15,6 @@ Project ini dibuat sebagai **portfolio QA Automation Engineer**.
 - **GitHub Actions (CI/CD)**
 - **Allure Report**
 
-'''
-
 ## Test Coverage
 ### Authentication
 - Login berhasil (standard_user)
@@ -111,9 +109,12 @@ Allure Report menampilkan:
 - Tagging (`@smoke`, `@regression`, `@e2e`)
 
 
+
 Report tersedia sebagai **GitHub Actions artifact** setiap pipeline dijalankan.
 
 ### Author
 Rizqi Hilman
-QA Automation Engineer
-🔗 GitHub: https://github.com/rizqihilman
+- QA Automation Engineer
+- GitHub: https://github.com/rizqihilman
+- LinkedIn: https://www.linkedin.com/in/rizqihilman/
+
