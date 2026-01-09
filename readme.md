@@ -109,9 +109,16 @@ Allure Report menampilkan:
 - Retry history
 - Tagging (`@smoke`, `@regression`, `@e2e`)
 
+## Allure Report (Live)
+Allure Report dapat diakses secara publik melalui GitHub Pages:
 
+🔗 **https://rizqihilman.github.io/Portfolio-rizqihilman-saucedemo/**
 
-Report tersedia sebagai **GitHub Actions artifact** setiap pipeline dijalankan.
+Report berisi:
+- Test steps
+- Screenshot & video on failure
+- Retry history
+- Tag-based execution (@smoke, @regression, @e2e)
 
 ### Author
 Rizqi Hilman

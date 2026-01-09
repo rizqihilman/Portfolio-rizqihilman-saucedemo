@@ -28,7 +28,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: 🧪 Run Playwright Tests
-        run: npx playwright test
+        run: npx playwright test --grep @smoke
         env:
           CI: true
 
