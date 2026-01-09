@@ -3,7 +3,8 @@
 ![Playwright](https://img.shields.io/badge/Playwright-Automation-green?logo=playwright)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
 ![CI](https://github.com/rizqihilman/Portfolio-rizqihilman-saucedemo/actions/workflows/playwright.yml/badge.svg)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+[![Allure Report](https://img.shields.io/badge/Allure-View_Report-orange)](https://rizqihilman.github.io/Portfolio-rizqihilman-saucedemo/)
+
 
 Automation testing project menggunakan **Playwright + TypeScript** dengan pendekatan **Page Object Model (POM)** dan **CI/CD GitHub Actions**.  
 Project ini dibuat sebagai **portfolio QA Automation Engineer**.
