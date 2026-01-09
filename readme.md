@@ -110,19 +110,20 @@ Allure Report menampilkan:
 - Tagging (`@smoke`, `@regression`, `@e2e`)
 
 ## Allure Report (Live)
-Allure Report dapat diakses secara publik melalui GitHub Pages:
-
-🔗 **https://rizqihilman.github.io/Portfolio-rizqihilman-saucedemo/**
-
+Allure Report dapat diakses secara publik melalui GitHub Pages
 Report berisi:
 - Test steps
 - Screenshot & video on failure
 - Retry history
 - Tag-based execution (@smoke, @regression, @e2e)
 
+![Allure Report](assets/allure-report.png)
+
+🔗 **https://rizqihilman.github.io/Portfolio-rizqihilman-saucedemo/**
+
 ### Author
 Rizqi Hilman
-- QA Automation Engineer
+- Quality Assurance
 - GitHub: https://github.com/rizqihilman
 - LinkedIn: https://www.linkedin.com/in/rizqihilman/
 
