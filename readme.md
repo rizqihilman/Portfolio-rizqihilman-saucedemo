@@ -54,21 +54,22 @@ sauce-demo-playwright/
 ├─ package.json
 └─ README.md
 
+```
 
-▶️ How to Run Locally
-1️⃣ Install dependencies
+How to Run Locally
+1 Install dependencies
 - npm install
 
-2️⃣ Install Playwright browsers
+2 Install Playwright browsers
 - npx playwright install
 
-3️⃣ Run all tests
+3 Run all tests
 - npx playwright test
 
-4️⃣ Open HTML Report
+4 Open HTML Report
 - npx playwright show-report
 
-🏷️ Test Tagging
+### Test Tagging
 Project ini menggunakan tagging untuk grouping test:
 
 | Tag           | Deskripsi           |
@@ -81,7 +82,7 @@ Project ini menggunakan tagging untuk grouping test:
 Contoh menjalankan test tertentu:
 - npx playwright test --grep @e2e
 
-🔄 CI/CD Pipeline
+### CI/CD Pipeline
 Automation dijalankan otomatis menggunakan GitHub Actions pada:
 - Push ke branch main
 - Pull Request ke main
@@ -92,7 +93,7 @@ CI menjalankan:
 - Run Playwright tests
 - Generate HTML report (artifact)
 
-📌 Why This Project?
+### Why This Project?
 - Automation best practices
 - Clean & scalable structure
 - CI/CD implementation
@@ -115,7 +116,7 @@ Allure Report menampilkan:
 Report tersedia sebagai **GitHub Actions artifact** setiap pipeline dijalankan.
 
 
-👨‍💻 Author
+### Author
 Rizqi Hilman
 QA Automation Engineer
 🔗 GitHub: https://github.com/rizqihilman
