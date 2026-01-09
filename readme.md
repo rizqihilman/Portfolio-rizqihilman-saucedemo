@@ -15,26 +15,26 @@ Project ini dibuat sebagai **portfolio QA Automation Engineer**.
 - **GitHub Actions (CI/CD)**
 - **Allure Report**
 
----
+'''
 
 ## Test Coverage
 ### Authentication
----
+'''
 - Login berhasil (standard_user)
 - Validasi login gagal (locked_out_user, invalid credential)
 
 ### Inventory
----
+'''
 - Sorting produk (A–Z, Z–A, Price Low–High)
 - Add product ke cart
 
 ### Cart
----
+'''
 - Verifikasi item di cart
 - Lanjut ke checkout
 
 ### Checkout (End-to-End)
----
+'''
 - Checkout produk sampai selesai
 - Verifikasi checkout success
 
@@ -45,6 +45,7 @@ sauce-demo-playwright/
 ├─ .github/
 │  └─ workflows/
 │     └─ playwright.yml  # CI Pipeline
+│─ allure-results
 ├─ pages/
 │  ├─ login.page.ts
 │  ├─ inventory.page.ts
@@ -61,7 +62,7 @@ sauce-demo-playwright/
 ```
 
 ## How to Run Locally
----
+'''
 1 Install dependencies
 - npm install
 2 Install Playwright browsers
@@ -72,7 +73,7 @@ sauce-demo-playwright/
 - npx playwright show-report
 
 ### Test Tagging
----
+'''
 Project ini menggunakan tagging untuk grouping test:
 
 | Tag           | Deskripsi           |
@@ -86,7 +87,7 @@ Contoh menjalankan test tertentu:
 - npx playwright test --grep @e2e
 
 ### CI/CD Pipeline
----
+'''
 Automation dijalankan otomatis menggunakan GitHub Actions pada:
 - Push ke branch main
 - Pull Request ke main
@@ -98,7 +99,7 @@ CI menjalankan:
 - Generate HTML report (artifact)
 
 ### Why This Project?
----
+'''
 - Automation best practices
 - Clean & scalable structure
 - CI/CD implementation
@@ -106,7 +107,7 @@ CI menjalankan:
 - Industry-ready QA workflow
 
 ## Test Report (Allure)
----
+'''
 Project ini menggunakan **Allure Report** untuk visualisasi hasil automation test.
 
 - npx playwright test
@@ -123,7 +124,7 @@ Report tersedia sebagai **GitHub Actions artifact** setiap pipeline dijalankan.
 
 
 ### Author
----
+'''
 Rizqi Hilman
 QA Automation Engineer
 🔗 GitHub: https://github.com/rizqihilman
