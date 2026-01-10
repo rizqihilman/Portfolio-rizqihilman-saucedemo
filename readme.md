@@ -117,7 +117,6 @@ Report berisi:
 - Retry history
 - Tag-based execution (@smoke, @regression, @e2e)
 
-![Allure Report](assets/allure-report.png)
 
 🔗 **https://rizqihilman.github.io/Portfolio-rizqihilman-saucedemo/**
 
@@ -126,4 +125,5 @@ Rizqi Hilman
 - Quality Assurance
 - GitHub: https://github.com/rizqihilman
 - LinkedIn: https://www.linkedin.com/in/rizqihilman/
+- My Resume: https://rizqihilman.github.io/
 
